@@ -1,0 +1,79 @@
+<div class="outer">
+  <div class="container">
+    <div class="logo"><span class="yellow">Matrix</span>Fitness</div>
+    <div class="inner">
+      <form  (ngSubmit)="OnSubmit()">
+        <input
+          class="formcontrol"
+          type="text"
+          id="email"
+          formControlName="email"
+          placeholder="Enter your email"
+          autocomplete="off"
+        />
+        <div
+          *ngIf="
+            !signupForm.get('email')?.valid &&
+            (signupForm.get('email')?.dirty || signupForm.get('email')?.touched)
+          "
+          class="failed"
+        >
+          <div *ngIf="signupForm.controls['email'].errors?.['required']">
+            Email is required.
+          </div>
+          <div *ngIf="signupForm.get('email')?.errors?.['email']">
+            Invalid email format.
+          </div>
+        </div>
+        <input
+          class="formcontrol"
+          type="number"
+          id="phoneNumber"
+          formControlName="phoneNumber"
+          placeholder="Enter your Phone Number"
+          autocomplete="off"
+        />
+        <div
+          *ngIf="
+            !signupForm.get('phoneNumber')?.valid &&
+            (signupForm.get('phoneNumber')?.dirty || signupForm.get('phoneNumber')?.touched)
+          "
+          class="failed"
+        >
+          <div *ngIf="signupForm.controls['phoneNumber'].errors?.['required']">
+            Phone number is required.
+          </div>
+          <div *ngIf="signupForm.get('phoneNumber')?.errors?.['phoneNumber']">
+            Invalid Phone number format.
+          </div>
+        </div>
+        <input
+          type="password"
+          id="password"
+          class="formcontrol"
+          formControlName="password"
+          placeholder="Enter your password"
+        />
+        <div
+          *ngIf="
+            signupForm.get('password')?.invalid &&
+            (signupForm.get('password')?.dirty ||
+              signupForm.get('password')?.touched)
+          "
+          class="failed"
+        >
+          <div *ngIf="signupForm.get('password')?.errors?.['required']">
+            Password is required.
+          </div>
+          <div *ngIf="signupForm.controls['password']?.errors?.['minlength']">
+            Password must contain 1 Uppercase 1 Lowercase 1 Number 1 Special
+            character and minimum length of 8 characters
+          </div>
+        </div>
+        <button class="button" type="submit" [disabled]="!signupForm.valid">
+          Register
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

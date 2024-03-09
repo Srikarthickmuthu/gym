@@ -1,0 +1,409 @@
+<div class="header" id="home">
+  <div class="container">
+    <nav class="header-navigation" aria-label="navigation">
+      <div class="logo"><span class="yellow">Matrix</span>Fitness</div>
+
+      <img
+        src="../assets/nav-icon.svg"
+        alt="navigation icon"
+        class="nav-icon"
+        width="30"
+        height="30"
+      />
+
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#courses">Courses</a>
+        </li>
+        <li>
+          <a href="#trainers">Trainers</a>
+        </li>
+        <li>
+          <a (click)="openLogin()">Login</a>
+        </li>
+        <li>
+          <a href="#contact">Logout</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="section-hero">
+    <div class="container hero-box">
+      <div class="hero-content margin-bottom">
+        <h1 class="heading heading--1 ">
+          A place for your fitness goals
+        </h1>
+        <p class="description">
+          We Offer Functional Training, Plyometric Boxes, Aerobics classes,
+          and Much More
+        </p>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn__primary margin-right margin-bottom" (click)="openEnroll()">
+          Join us
+        </button>
+        <a class="btn btn__secondary" href="#courses">Our services</a>
+      </div>
+    </div>
+  </div>
+  <section class="about-section">
+    <div class="section-about" id="about">
+      <div class="about-box container" id="about">
+        <figure class="about-box__image">
+          <img
+            src="../assets/about-img-1.jpg"
+            alt="about-image-one"
+            width="350"
+            height="233"
+          />
+          <img
+            src="../assets/about-img-2.jpg"
+            alt="about-image-twwo"
+            width="350"
+            height="233"
+          />
+          <img
+            src="../assets/about-img-3.jpg"
+            alt="about-image-three"
+            width="420"
+            height="280"
+          />
+        </figure>
+        <div class="about-box__content" >
+          <h2 class="heading heading--2">
+            About <span class="yellow">Matrix</span>Fitness
+          </h2>
+          <p>
+            If the customer is very smart, he or she will be able to achieve the desired result. How
+             By bearing pain, we repel it, so that we may flee from pain, in such a way that
+             it is often times of them. He will be followed by flattery and pleasures,
+             I will explain the difficulties in the times that are easy.
+          </p>
+          <a href="#" class="link-button">&larr; Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-courses" id="courses">
+    <div class="container courses-box" data-aos="fade-up">
+      <header class="courses-heading">
+        <h2 class="heading heading--2 underline">Our Courses</h2>
+        <p>
+          If the customer is very smart, he or she will be able to achieve the desired result. He hates it
+           we lead him to the great pleasure of the body, because from him pains
+           services! Delete because that.
+        </p>
+      </header>
+      <article class="courses-content">
+        <div class="class-card">
+          <img
+            class="class-card__img"
+            src="../assets/courses-bodybuilding.jpg"
+            alt="body building course"
+            width="550"
+            height="550"
+          />
+          <div class="class-card__title">Body Building</div>
+        </div>
+        <div class="class-card">
+          <img
+            class="class-card__img"
+            src="../assets/courses-crossfit.jpg"
+            alt="cross fit course"
+            width="550"
+            height="550"
+          />
+          <div class="class-card__title">Cross Fit</div>
+        </div>
+        <div class="class-card">
+          <img
+            class="class-card__img"
+            src="../assets/courses-gymnastic.jpg"
+            alt="gymnastic course"
+            width="550"
+            height="550"
+          />
+          <div class="class-card__title">Gymnastic</div>
+        </div>
+        <div class="class-card">
+          <img
+            class="class-card__img"
+            src="../assets/courses-fitness.jpg"
+            alt="fitness course"
+            width="550"
+            height="550"
+          />
+          <div class="class-card__title">Fitness</div>
+        </div>
+        <div class="class-card">
+          <img
+            class="class-card__img"
+            src="../assets/courses-boxing.jpg"
+            alt="fitness course"
+            width="550"
+            height="550"
+          />
+          <div class="class-card__title">Cardio</div>
+        </div>
+
+        <div class="class-card">
+          <img
+            class="class-card__img"
+            src="../assets/courses-gymnastic.jpg"
+            alt="fitness course"
+            width="550"
+            height="550"
+          />
+          <div class="class-card__title">Boxing</div>
+        </div>
+      </article>
+    </div>
+  </section>
+   <!-- SECTION OFFER -->
+   <section class="section-offer" id="offer">
+    <div class="offer-box">
+      <div class="offer" data-aos="fade-up">
+        <h2 class="heading heading--2 margin-bottom">
+          Special offer this summer get full Benefits for year with 20%
+          discount.
+        </h2>
+        <p class="margin-bottom">
+          The company itself is a very successful company.
+           It will be a routine exercise that is born to be rejected.
+        </p>
+        <button class="btn btn__primary">Become a member</button>
+      </div>
+
+      <div class="offer-img"></div>
+    </div>
+  </section>  
+
+  <section class="section-coaches" id="trainers">
+    <div class="container coaches-box" data-aos="fade-up">
+      <header class="coache-heading">
+        <h2 class="heading heading--2 underline margin-bottom">
+          OUR FITNESS COACHES
+        </h2>
+        <p>
+          If the customer is very smart, he or she will be able to achieve the desired result. He hates it
+           we lead him to the great pleasure of the body, because from him pains
+           services! Delete because that.
+        </p>
+      </header>
+
+      <article class="coache-content">
+        <div class="c-card">
+          <img
+            src="../assets/coache-1.jpg"
+            alt="coache one"
+            class="c-card__img"
+            width="550"
+            height="550"
+          />
+
+          <div class="overlay">
+            <img
+              src="../assets/logo-whatsapp.svg"
+              alt="whatsapp-icon"
+              width="30"
+              height="30"
+            />
+
+            <img
+              src="../assets/logo-facebook.svg"
+              alt="facebook-icon"
+              width="30"
+              height="30"
+            />
+
+            <img
+              src="../assets/logo-instagram.svg"
+              alt="instagram-icon"
+              width="30"
+              height="30"
+            />
+
+            <img
+              src="../assets/logo-twitter.svg"
+              alt="twitter-icon"
+              width="30"
+              height="30"
+            />
+          </div>
+
+          <div class="c-card__content">
+            <p class="c-name">kunal Rajput</p>
+            <p class="c-title">Body Building</p>
+          </div>
+        </div>
+
+        <div class="c-card">
+          <img
+            src="../assets/coache-2.jpg"
+            alt="coache one"
+            class="c-card__img"
+            width="550"
+            height="550"
+          />
+
+          <div class="overlay">
+            <img
+              src="../assets/logo-whatsapp.svg"
+              alt="whatsapp-icon"
+              width="30"
+              height="30"
+            />
+
+            <img
+              src="../assets/logo-facebook.svg"
+              alt="facebook-icon"
+              width="30"
+              height="30"
+            />
+
+            <img
+              src="../assets/logo-instagram.svg"
+              alt="instagram-icon"
+              width="30"
+              height="30"
+            />
+
+            <img
+              src="../assets/logo-twitter.svg"
+              alt="twitter-icon"
+              width="30"
+              height="30"
+            />
+          </div>
+
+          <div class="c-card__content">
+            <p class="c-name">Sapna Vyas</p>
+            <p class="c-title">Cardio Expert</p>
+          </div>
+        </div>
+
+        <div class="c-card">
+          <img
+            src="../assets/coache-3.jpg"
+            alt="coache three"
+            class="c-card__img"
+            width="550"
+            height="550"
+          />
+          <div class="overlay">
+            <img
+              src="../assets/logo-whatsapp.svg"
+              alt="whatsapp-icon"
+              width="30"
+              height="30"
+            />
+
+            <img
+              src="../assets/logo-facebook.svg"
+              alt="facebook-icon"
+              width="30"
+              height="30"
+            />
+
+            <img
+              src="../assets/logo-instagram.svg"
+              alt="instagram-icon"
+              width="30"
+              height="30"
+            />
+
+            <img
+              src="../assets/logo-twitter.svg"
+              alt="twitter-icon"
+              width="30"
+              height="30"
+            />
+          </div>
+
+          <div class="c-card__content">
+            <p class="c-name">Tarun Gill</p>
+            <p class="c-title">Fitness Coach</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+<!-- FOOTER -->
+<footer class="section-footer" id="footer">
+  <div class="footer-box container">
+    <div class="contact-details">
+      <h2 class="margin-bottom"><span class="yellow">Matrix</span>Fitness</h2>
+
+      <ul class="contact-data">
+        <li class="location">123 OMR Street,chennai, India</li>
+        <li class="phone">+91 000 000 0000</li>
+        <li class="email">Mat</li>
+        <li class="social">
+          <img
+            src="../assets/logo-whatsapp.svg"
+            alt="whatsapp icon"
+            width="35"
+            height="35"
+          />
+
+          <img
+            src="../assets/logo-facebook.svg"
+            alt="facebook icon"
+            width="35"
+            height="35"
+          />
+
+          <img
+            src="../assets/logo-instagram.svg"
+            alt="instagram icon"
+            width="35"
+            height="35"
+          />
+
+          <img
+            src="../assets/logo-twitter.svg"
+            alt="twitter icon"
+            width="35"
+            height="35"
+          />
+        </li>
+      </ul>
+    </div>
+
+    <nav class="footer-nav" aria-label="navigation">
+      <div class="nav-name">Quick Links</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="newsletter">
+      <div class="newsletter__title">News Letter</div>
+      <div class="newsletter__text">
+        The company itself is a very successful company. praisers
+         unless!
+      </div>
+      <form class="newsletter__input">
+        <input type="text" class="form" placeholder="example@domine.com" />
+        <img
+          src="../assets/send.svg"
+          alt="send icon"
+          class="send-icon"
+          width="36"
+          height="36"
+        />
+      </form>
+    </div>
+  </div>
+</footer>
+</div> 

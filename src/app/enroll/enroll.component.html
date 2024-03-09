@@ -1,0 +1,61 @@
+<div class="outer">
+    <div class="container">
+        <div class="logo"><span class="yellow">Matrix</span>Fitness</div>
+        <div class="inner">
+            <form (ngSubmit)="enroll()">
+                <input class="formcontrol" type="text" id="name" formControlName="name" placeholder="Enter your name"
+                    autocomplete="off" />
+                <div *ngIf="
+              !signInForm.get('name')?.valid &&
+              (signInForm.get('name')?.dirty || signInForm.get('name')?.touched)
+            " class="failed">
+                    <div *ngIf="signInForm.controls['name'].errors?.['required']">
+                        Name is required.
+                    </div>
+                    <div *ngIf="signInForm.get('email')?.errors?.['email']">
+                        Invalid Name format.
+                    </div>
+                </div>
+                <input class="formcontrol" type="text" id="email" formControlName="email" placeholder="Enter your email"
+                    autocomplete="off" />
+                <div *ngIf="
+              !signInForm.get('email')?.valid &&
+              (signInForm.get('email')?.dirty || signInForm.get('email')?.touched)
+            " class="failed">
+                    <div *ngIf="signInForm.controls['email'].errors?.['required']">
+                        Email is required.
+                    </div>
+                    <div *ngIf="signInForm.get('email')?.errors?.['email']">
+                        Invalid email format.
+                    </div>
+                </div>
+                <input class="formcontrol" type="number" id="phoneNumber" formControlName="phoneNumber"
+                    placeholder="Enter your Phone Number" autocomplete="off" />
+                <div *ngIf="
+              !signInForm.get('phoneNumber')?.valid &&
+              (signInForm.get('phoneNumber')?.dirty || signInForm.get('phoneNumber')?.touched)
+            " class="failed">
+                    <div *ngIf="signInForm.controls['email'].errors?.['required']">
+                        Phone Number is required.
+                    </div>
+                    <div *ngIf="signInForm.get('email')?.errors?.['email']">
+                        Invalid Phone number format.
+                    </div>
+                </div>
+                <select *ngFor="let course of courses">
+                    <option>karthick</option>
+                    <option>karthick</option>
+                    <option>karthick</option>
+                    <option>karthick</option>
+                    <option>{{course}}</option>
+                </select>
+                <button class="button" type="submit" [disabled]="!signInForm.valid">
+                    Continue to payment
+                </button>
+            </form>
+        </div>
+        <p>
+            
+        </p>
+    </div>
+</div>

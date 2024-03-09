@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --color-yellow: hsl(56, 99%, 52%);
+    --color-yellow-dark: hsl(56, 99%, 32%);
+    --color-yellow-light: hsl(56, 99%, 82%);
+    --color-black: hsl(0, 0%, 15%);
+    --color-black-light: hsl(0, 0%, 22%);
+    --color-red: hsl(359, 77%, 56%);
+    --grid-column-gap: clamp(2rem, 6vw, 8rem);
+    --grid-row-gap: 4rem;
+    --two-col-layout: 2;
+    --three-col-layout: 3;
+  }
+  @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
