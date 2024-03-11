@@ -2,7 +2,7 @@
   <div class="container">
     <div class="logo"><span class="yellow">Matrix</span>Fitness</div>
     <div class="inner">
-      <form  (ngSubmit)="OnSubmit()">
+      <form [formGroup]="signupForm"  (ngSubmit)="OnSubmit()">
         <input
           class="formcontrol"
           type="text"

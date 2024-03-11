@@ -11,11 +11,6 @@ import { SignupComponent } from '../signup/signup.component';
 })
 export class SigninComponent implements OnInit {
   public signInForm!: FormGroup;
-  public id: Array<any> = [];
-  user: any;
-  public daysLeft: Number = 1;
-  public show: boolean = false;
-  @ViewChild('googleButton') googleButton: any;
   constructor(
     private formbuilder: FormBuilder,
     public router: Router,
@@ -40,6 +35,8 @@ export class SigninComponent implements OnInit {
     this.matDialog.open(SignupComponent).afterClosed().subscribe()
   }
   public login() {
+    console.log("vantaa");
+    
     if (this.signInForm.invalid) {
       this.signInForm.markAllAsTouched();
       return;

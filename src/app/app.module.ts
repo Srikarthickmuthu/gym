@@ -9,17 +9,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EnrollComponent } from './enroll/enroll.component';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [	
     AppComponent,
       HomeComponent,
-      EnrollComponent
+      EnrollComponent,
    ],
   imports: [
     BrowserModule,
     MatDialogModule,
     FormsModule,
+    HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,

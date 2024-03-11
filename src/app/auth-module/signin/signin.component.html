@@ -2,7 +2,7 @@
   <div class="container">
     <div class="logo"><span class="yellow">Matrix</span>Fitness</div>
     <div class="inner">
-      <form  (ngSubmit)="login()">
+      <form [formGroup]="signInForm" (ngSubmit)="login()">
         <input
           class="formcontrol"
           type="text"
@@ -56,10 +56,6 @@
         <div id="hrright"><hr /></div>
         OR
         <div id="hrleft"><hr /></div>
-      </div>
-      <div class="link">
-        <!-- <asl-google-signin-button #googleButton></asl-google-signin-button> -->
-        <p>Login with google</p>
       </div>
     </div>
   </div>

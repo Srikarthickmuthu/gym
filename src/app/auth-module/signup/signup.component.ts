@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 // import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
+import { UserService } from 'src/app/service/user.service';
 // import { UserService } from 'src/app/service/user.service';
 @Component({
   selector: 'app-signup',
@@ -13,7 +14,8 @@ export class SignupComponent implements OnInit {
 
   constructor(
     private formBuilders: FormBuilder,
-    public router: Router
+    public router: Router,
+    private userService:UserService
   ) {}
 
   ngOnInit(): void {
@@ -24,9 +26,6 @@ export class SignupComponent implements OnInit {
         '',
         [
           Validators.required,
-          Validators.pattern(
-            /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])/
-          ),
         ],
       ],
     });
@@ -39,6 +38,7 @@ export class SignupComponent implements OnInit {
     }
     else{
       console.log(this.signupForm.value);
+      this.userService.sendEmail(this.signupForm.value.email).subscribe()
     }
   }
 }
